@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ﻿# LinkFinder 🔍
+=======
+# Create a comprehensive README.md
+@"
+# LinkFinder 🔍
+>>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -19,6 +25,7 @@
 ## 🚀 Installation
 
 ### Quick Install
+<<<<<<< HEAD
 \\\ash
 pip install linkfinder
 \\\
@@ -29,13 +36,29 @@ git clone https://github.com/mulfapoeding-gif/linkfinder.git
 cd linkfinder
 pip install -e .
 \\\
+=======
+\`\`\`bash
+pip install linkfinder
+\`\`\`
+
+### From Source
+\`\`\`bash
+git clone https://github.com/mulfapoeding-gif/linkfinder.git
+cd linkfinder
+pip install -e .
+\`\`\`
+>>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 
 ## 📖 Usage
 
 ### Command Line
 
 #### Basic Search
+<<<<<<< HEAD
 \\\ash
+=======
+\`\`\`bash
+>>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 # Search for software
 linkfinder \"Ubuntu 22.04\"
 
@@ -44,10 +67,17 @@ linkfinder \"Daftpunk Get Lucky\" -e .mp3,.flac
 
 # Interactive mode (recommended for beginners)
 linkfinder
+<<<<<<< HEAD
 \\\
 
 #### Advanced Options
 \\\ash
+=======
+\`\`\`
+
+#### Advanced Options
+\`\`\`bash
+>>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 # Custom extensions
 linkfinder \"Movie Name\" -e .mp4,.mkv,.avi
 
@@ -62,10 +92,17 @@ linkfinder \"Software\" --output json
 
 # More results
 linkfinder \"Ubuntu\" -n 100
+<<<<<<< HEAD
 \\\
 
 ### Python API
 \\\python
+=======
+\`\`\`
+
+### Python API
+\`\`\`python
+>>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 from linkfinder import run_search
 
 # Search for Ubuntu ISOs
@@ -77,6 +114,7 @@ results = run_search(
 
 for result in results[:10]:
     print(f\"{result['title']}: {result['href']}\")
+<<<<<<< HEAD
 \\\
 
 ## 📋 Command Line Options
@@ -94,6 +132,25 @@ for result in results[:10]:
 - --backend: DuckDuckGo backend (auto/html/lite/bing)
 - --threads: Number of worker threads for scraping
 - --version: Show version information
+=======
+\`\`\`
+
+## 📋 Command Line Options
+
+- `terms`: Search terms (multiple words supported)
+- `-e, --extensions`: File extensions to search for (.mp3, .mp4, .torrent, etc.)
+- `-s, --sites`: Comma-separated list of sites to search
+- `-n, --max`: Maximum number of results (default: 60)
+- `-o, --output`: Output format (text/json/csv)
+- `--no-restrict`: Search entire web without site restrictions
+- `--no-scrape`: Skip page scraping for direct links
+- `-v, --verbose`: Enable verbose logging
+- `--enable-safe-search`: Turn on safe search
+- `--extra-keywords`: Add download/install keywords
+- `--backend`: DuckDuckGo backend (auto/html/lite/bing)
+- `--threads`: Number of worker threads for scraping
+- `--version`: Show version information
+>>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 
 ## 🏗️ Supported File Types
 
@@ -114,7 +171,11 @@ The tool includes a built-in whitelist of popular sites by default:
 - **File Hosts**: MediaFire, Mega.nz, Zippyshare, RapidGator
 - **Torrent Trackers**: The Pirate Bay, 1337x, RARBG, YTS
 
+<<<<<<< HEAD
 You can customize this list using the --sites parameter or disable restrictions with --no-restrict.
+=======
+You can customize this list using the `--sites` parameter or disable restrictions with `--no-restrict`.
+>>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 
 ## ⚖️ Legal & Ethical Use
 
@@ -149,3 +210,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **⚖️ Disclaimer**: This software is provided for educational and research purposes. Users are responsible for ensuring their usage complies with all applicable laws and regulations.
+<<<<<<< HEAD
+=======
+"@ | Out-File -FilePath "README.md" -Encoding UTF8
+>>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
