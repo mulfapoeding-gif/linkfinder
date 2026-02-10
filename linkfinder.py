@@ -240,7 +240,11 @@ def google_search_wrapper(
 # ----------------------------------------------------------------------
 if _HAS_REQUESTS and _HAS_BS4:
     _EXT_RE = re.compile(
-        rf"https?://[^\s'\"<>]+(?:{"|".join(map(re.escape, DEFAULT_EXTENSIONS))})",
+        # Line 243 - FIXED
+_EXT_RE = re.compile(
+    rf"https?://[^\s'\"<>]+(?:{"|".join(map(re.escape, DEFAULT_EXTENSIONS))})",
+    re.IGNORECASE,
+)
         re.IGNORECASE,
     )
 
