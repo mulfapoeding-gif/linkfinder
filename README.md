@@ -1,3 +1,10 @@
+git clone https://github.com/GerbenJavado/LinkFinder.git
+cd LinkFinder
+python setup.py install
+
+
+
+
 How to setup all steps from installing python manager to all requirements and then linkfinder as a package
 
 How to setup all steps from installing python manager to all requirements and then linkfinder as a package
