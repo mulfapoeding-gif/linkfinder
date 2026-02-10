@@ -1,8 +1,73 @@
-<<<<<<< HEAD
+Today
+How to setup all steps from installing python manager to all requirements and then linkfinder as a package
+
+How to setup all steps from installing python manager to all requirements and then linkfinder as a package
+Here’s a complete step‑by‑step guide to setting up Python, installing requirements, and getting LinkFinder running as a package:
+
+1. Install Python and Package Manager
+Download Python: Get the latest version from python.org.
+
+Verify installation:
+
+bash
+python --version
+Ensure pip is installed (pip is Python’s package manager):
+
+bash
+python -m ensurepip --upgrade
+pip --version
+2. Create a Virtual Environment (recommended)
+This keeps dependencies isolated.
+
+bash
+python -m venv venv
+source venv/bin/activate   # Linux/macOS
+venv\Scripts\activate      # Windows
+3. Install Requirements
+If you have a requirements.txt file:
+
+bash
+pip install -r requirements.txt
+Otherwise, install packages manually:
+
+bash
+pip install requests beautifulsoup4
+(Adjust based on your project needs.)
+
+4. Install LinkFinder
+LinkFinder is a Python tool for discovering endpoints in JavaScript files.
+
+Install directly from PyPI:
+
+bash
+pip install linkfinder
+Or install from GitHub (latest version):
+
+bash
+git clone https://github.com/GerbenJavado/LinkFinder.git
+cd LinkFinder
+python setup.py install
+5. Verify Installation
+Run LinkFinder to confirm it works:
+
+bash
+linkfinder -h
+This should display the help menu with available options.
+
+6. Example Usage
+To scan a JavaScript file:
+
+bash
+python linkfinder.py -i example.js -o cli
+To scan a URL:
+
+bash
+python linkfinder.py -i https://example.com/script.js -o cli
+✅ You now have Python, pip, requirements installed, and LinkFinder set up as a package.
+
 ﻿# LinkFinder 🔍
 =======
-# Create a comprehensive README.md
-@"
+
 # LinkFinder 🔍
 >>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 
@@ -25,28 +90,26 @@
 ## 🚀 Installation
 
 ### Quick Install
-<<<<<<< HEAD
-\\\ash
+
 pip install linkfinder
-\\\
+
 
 ### From Source
-\\\ash
+
 git clone https://github.com/mulfapoeding-gif/linkfinder.git
 cd linkfinder
 pip install -e .
-\\\
 =======
-\`\`\`bash
+
 pip install linkfinder
-\`\`\`
+
 
 ### From Source
-\`\`\`bash
+
 git clone https://github.com/mulfapoeding-gif/linkfinder.git
 cd linkfinder
 pip install -e .
-\`\`\`
+
 >>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 
 ## 📖 Usage
@@ -54,10 +117,9 @@ pip install -e .
 ### Command Line
 
 #### Basic Search
-<<<<<<< HEAD
-\\\ash
+
 =======
-\`\`\`bash
+
 >>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 # Search for software
 linkfinder \"Ubuntu 22.04\"
@@ -67,16 +129,11 @@ linkfinder \"Daftpunk Get Lucky\" -e .mp3,.flac
 
 # Interactive mode (recommended for beginners)
 linkfinder
-<<<<<<< HEAD
-\\\
+
+
 
 #### Advanced Options
-\\\ash
-=======
-\`\`\`
 
-#### Advanced Options
-\`\`\`bash
 >>>>>>> cbc6706262efa81f85e95a389d3fcd8feeb31f06
 # Custom extensions
 linkfinder \"Movie Name\" -e .mp4,.mkv,.avi
@@ -92,8 +149,7 @@ linkfinder \"Software\" --output json
 
 # More results
 linkfinder \"Ubuntu\" -n 100
-<<<<<<< HEAD
-\\\
+
 
 ### Python API
 \\\python
