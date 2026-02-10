@@ -1,4 +1,4 @@
-git clone https://github.com/GerbenJavado/LinkFinder.git
+git clone https://github.com/mulfapoeding-gif/linkfinder.git
 cd LinkFinder
 pip install -r requirements.txt
 python setup.py install
