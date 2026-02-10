@@ -1,4 +1,3 @@
-Today
 How to setup all steps from installing python manager to all requirements and then linkfinder as a package
 
 How to setup all steps from installing python manager to all requirements and then linkfinder as a package
