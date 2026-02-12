@@ -23,7 +23,7 @@ Features
   ask you for the query (and optional extensions) and then run with the
   “best‑results” defaults, so you never have to remember a long one‑liner.
 
-Author : <your‑name>
+Author : Quartus Marais 5e8enin9
 License: MIT
 """
 
